@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="2">
+<Container version="3">
   <Name>plex-hwdecode</Name>
   <Repository>linuxserver/plex</Repository>
   <Registry>https://hub.docker.com/r/linuxserver/plex/</Registry>
