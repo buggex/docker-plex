@@ -60,7 +60,7 @@ COPY root/ /
 RUN \
  echo "**** updating transdocer ****" && \
  mv /usr/lib/plexmediaserver/Plex\ Transcoder /usr/lib/plexmediaserver/Plex\ Transcoder\ Default
-COPY plex_files/Plex\ Transcoder /usr/lib/plexmediaserver/
+COPY "plex_files/Plex Transcoder" /usr/lib/plexmediaserver/
 RUN \
  chmod +x /usr/lib/plexmediaserver/Plex\ Transcoder
 
