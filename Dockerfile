@@ -55,7 +55,7 @@ RUN \
 
 # add local files
 COPY root/ /
-COPY plex_files/ /plex_files
+COPY plex_files /
 
 # update transdocer
 RUN \
