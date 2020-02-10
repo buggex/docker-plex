@@ -55,12 +55,13 @@ RUN \
 
 # add local files
 COPY root/ /
+COPY plex_files/ /plex_files
 
 # update transdocer
 RUN \
  echo "**** updating transdocer ****" && \
- mv /usr/lib/plexmediaserver/Plex\ Transcoder /usr/lib/plexmediaserver/Plex\ Transcoder\ Default
-COPY "plex_files/Plex Transcoder" /usr/lib/plexmediaserver/
+ mv /usr/lib/plexmediaserver/Plex\ Transcoder /usr/lib/plexmediaserver/Plex\ Transcoder\ Default \
+ cp plex_files/Plex\ Transcoder /usr/lib/plexmediaserver/
 RUN \
  chmod +x /usr/lib/plexmediaserver/Plex\ Transcoder
 
