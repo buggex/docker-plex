@@ -61,8 +61,7 @@ COPY plex_files/ /plex_files
 RUN \
  echo "**** updating transdocer ****" && \
  mv /usr/lib/plexmediaserver/Plex\ Transcoder /usr/lib/plexmediaserver/Plex\ Transcoder\ Default \
- cp plex_files/Plex\ Transcoder /usr/lib/plexmediaserver/
-RUN \
+ cp plex_files/Plex\ Transcoder /usr/lib/plexmediaserver/ \
  chmod +x /usr/lib/plexmediaserver/Plex\ Transcoder
 
 # ports and volumes
